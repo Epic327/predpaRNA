@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Result</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+	<style >
+		 body {
+           /*background: url(../static/img/background/dna-1811955.jpg);*/
+			 background-repeat: no-repeat;
+			background-size: cover;
+			 background-position:50% 50%;
+        }
+		/*lightblue*/
+        table,table tr th, table tr td { border:3px solid black; }
+        /*table {  text-align: center; border-collapse: collapse; padding:2px;}*/
+		.div_test{
+			left: 50%;
+			top: 50%;
+			transform: translate(35%,0%);
+		}
+	</style>
+</head>
+<body style="overflow: scroll">
+
+
+	<div class="div_test">
+<!--ivory-->
+	<table  style="color: black;" >
+		<p style="color: black"><b>Results for Prediction</b></p>
+		<br>
+		<tr>
+			<td>Number</td>
+			<td>Sequence Label</td>
+			<td>Probability of paRNA</td>
+			<td>Recognition Result</td>
+		</tr>
+
+<!--		{% if seq_dict == {}%}-->
+<!--		<script>-->
+<!--			window.alert("空输入")-->
+<!--		</script>-->
+<!--		{% endif %}-->
+		{%  for index in seq_dict %}
+		<tr>
+			<td>{{ seq_dict[index].num }}</td>
+			<td>{{ seq_dict[index].name }}</td>
+			<td>{{ seq_dict[index].y_prob }}</td>
+			<td>{{ seq_dict[index].y_pred }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+		<br>
+		<a href="{{ url_for('predict') }}">
+	     <input  type="submit" value="Go Back..">
+	   </a>
+	</div>
+
+<!--	<a href="..">-->
+<!--	<input class="centering-xy" type="submit" value="Go Back..">-->
+<!--	</a>-->
+
+</body>
+</html>

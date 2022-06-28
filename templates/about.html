@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Creative Coming Soon Template">
+	<meta name="author" content="Hitesh Jariwala">
+	<meta name="keywords" content="">
+	<!-- title -->
+	<title>About</title>
+	<!-- CSS IMPORT -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+    <style>
+
+        body {
+           background: url(../static/img/background/dna-1811955.jpg);
+			 background-repeat: no-repeat;
+			background-size: cover;
+			 background-position:50% 50%;
+        }
+
+        .box_father {
+            position: relative;
+            width: 1000px;
+            height: 800px;
+             /*background: pink;*/
+            margin: 20px auto;
+            /*padding-top: 10px;*/
+            margin-top: 145px;
+
+        }
+
+        .box_child1 {
+            position: absolute;
+            width: 500px;
+            height: 600px;
+            /*margin-left: 347px;*/
+            /* background: red;*/
+        }
+
+        .box_child2 {
+            position: absolute;
+            width: 500px;
+            height: 600px;
+             /*background: yellow;*/
+            margin-left: 600px;
+			margin-top: -78px;
+        }
+
+        .box_child2 img{
+            width: 285px;
+            height: 600px;
+        }
+
+        .box_child1 h1{
+            font-size: 72px;
+            line-height: 88px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+
+        .box_child1 h2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 500;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .box_child1 .test1{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 1px;
+            color: #dadada;
+            margin-top: 30px;
+        }
+
+        .box_child1 .test2{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 1px;
+            color: #dadada;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div align="left">
+			<ul>
+				<li><a href="{{ url_for('home') }}">Home </a></li>
+
+				<li><a  href="{{ url_for('about') }}">About </a></li>
+
+				<li><a  href="{{ url_for('predict') }}">Predict </a></li>
+			</ul>
+</div>
+
+    <div class="box_father">
+
+        <div class="box_child1">
+
+                <h1>About</h1>
+                <h2>PredPaRNA Online Prediction System</h2>
+                <p class="test1">The research on the function of paRNA in this field is still in its infancy,
+					so in order to better study the function of paRNA, it is necessary to identify paRNA from non-coding RNA data first.However,
+					paRNA sequence recognition is still a challenging task due to its easy degradation and high specificity.</p>
+                <br>
+
+			<p class="test2">PredPaRNA is a model constructed by one-dimensional
+				convolutional neural network (1DCNN) and bidirectional
+				long and short-term memory algorithm (BiLSTM).</p>
+        </div>
+
+
+        <div class="box_child2">
+
+            <img src="../static/img/background/model.png" alt="">
+
+        </div>
+
+    </div>
+<<!-- jquery -->
+	<script type="text/javascript" src="../static/js/jquery.js"></script>
+
+	<!-- bootstrap -->
+	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+	<!-- other plugins -->
+	<script type="text/javascript" src="../static/js/plugins.min.js"></script>
+	<!-- google map -->
+	<!-- main js -->
+	<script type="text/javascript" src="../static/js/main_slideshow.js"></script>
+    
+</body>
+</html>

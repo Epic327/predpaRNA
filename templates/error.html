@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+  <div id="error" d = "{{error_msg}}" style="display: none"></div>
+	<script>
+		var error_msg = document.getElementById("error").getAttribute("d")
+		// dataJson = JSON.parse(data)
+		window.alert(error_msg)
+	</script>
+
+
+</body>
+</html>

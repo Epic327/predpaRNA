@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!-- title -->
+	<title>Home</title>
+	<!-- CSS IMPORT -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+
+	<style>
+		body {
+			background-size: cover;
+			background-image:url("../static/img/background/dna-1811955.jpg") ;
+			background-repeat: no-repeat;
+
+			background-position:50% 50%;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+
+
+<!-- preloader -->
+	<div class="preloader-container">
+		<div class="content-container">
+			<!-- preloader -->
+			<span class="spinner-section-far"></span>
+			<!-- end preloader -->
+			<h6 class="preloader-text">
+				LOADING</h6>
+		</div>
+	</div>
+	<!-- end preloader -->
+
+
+
+
+	<!-- page container -->
+	<div class="page-container">
+		<div >
+			<ul>
+				<li ><a  href="{{ url_for('home') }}">Home </a></li>
+
+				<li><a  href="{{ url_for('about') }}">About </a></li>
+
+				<li><a  href="{{ url_for('predict') }}">Predict </a></li>
+			</ul>
+		</div>
+				<!-- content -->
+				<div
+					class="content col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-rlt no-pad centering-y">
+					<div class="col-md-12 col-sm-12">
+						<!-- headline -->
+						<h1>PredPaRNA</h1>
+						<div class="sub-title" id="wordsrotator">
+							<h4>Online Prediction System</h4>
+						</div>
+						<!-- end headline -->
+						<!-- short description -->
+						<h5>
+							Recognition of Human paRNA From mRNA by Deep Learning
+						</h5>
+					</div>
+						<!-- end short description -->
+				</div>
+						<div class="bottom"  id="master" >
+                          <a style="color:#FFF"  href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022002604号</a>
+                        </div>
+				<!-- end content -->
+	    </div>
+	</div>
+
+
+	<!-- jquery -->
+	<script type="text/javascript" src="../static/js/jquery.js"></script>
+
+	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+	<!-- other plugins -->
+	<script type="text/javascript" src="../static/js/plugins.min.js"></script>
+	<!-- google map -->
+	<!-- main js -->
+	<script type="text/javascript" src="../static/js/main_slideshow.js"></script>
+
+
+</body>
+</html>
