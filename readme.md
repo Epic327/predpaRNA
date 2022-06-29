@@ -40,7 +40,6 @@ docker run -p 8080:80 -d --name parna_model pred_parna:v1
 
 将1维的CNN与BiLSTM网络组合而成CNN-BiLSTM模型，该模型既拥有CNN捕获序列局部特征的能力，又拥有BiLSTM网络捕获序列上下文特征的能力。在项目model目录中，加入自己训练好的模型即可。
 
-![image-20220629220141939](C:\Users\Epic\AppData\Roaming\Typora\typora-user-images\image-20220629220141939.png)
-
+![](https://cdn.jsdelivr.net/gh/Epic327/code_study/picgomodel_cnn-bilstm.svg)
 
 
